@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+}
+.head0{
+  background-image: url('./photos/photo_falling.jfif');
+  background-size: cover;
+  padding: 2px;
+  padding-bottom: 50%;
+  padding-top: 50%;
+  text-align: center;
+}
+.blog{
+  border: solid black 1px;
+  box-shadow: 3px 4px #e0e0d1;
+  width: 45%;
+  display: inline-block;
+  padding-right: 2%;
+  margin-bottom: 10%;
+}
+.blog_space{
+
+}
+.un_pic{
+  width: 20%;
+  border: solid white 2px;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+.product{
+  border: solid black 2px;
+    box-shadow: 3px 4px #ccccb3;
+    width: 30%;
+    display: inline-block;
+}
+.product_grid{
+  padding-bottom: 50%;
+}
+ul{
+  display: inline;
+  padding-inline-start: 0;
+}
+li{
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+.fa-scroll{
+  margin: 0;
+  padding: 0;
+  color: blue;
+}
+nav{
+  background-color: grey;
+}
+#motto{
+  text-align: center;
+  padding-top: 30%;
+  padding-bottom: 40%;
+}
+
+.faEllipsis{
+  text-align: center;
+  padding-bottom: 10%;
+}
+.aboutCo{
+text-align: left;
+margin-right: 50%;
+padding-top: 40%;
+padding-bottom: 40%;
+
+}
+.aboutCo1{
+  text-align: right;
+  margin-left: 50%;
+  padding-bottom: 40%;
+}
+
+
+footer{
+  border-top: solid black 1px;
+}
