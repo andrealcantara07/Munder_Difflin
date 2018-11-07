@@ -1,23 +1,35 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
 body{
   margin: 0;
+  background-color: #ffffff;
 }
 .head0{
-  background-image: url('./photos/photo_falling.jfif');
+  background-image: url('./photos/stack_paper.jfif');
   background-size: cover;
   padding: 2px;
-  padding-bottom: 50%;
-  padding-top: 50%;
+  padding-bottom: 30%;
+  padding-top: 30%;
   text-align: center;
 }
 .blog{
   border: solid black 1px;
+  border-radius: 5%;
   box-shadow: 3px 4px #e0e0d1;
   width: 45%;
   display: inline-block;
   padding-right: 2%;
   margin-bottom: 10%;
+  background-color: #f5f5f0;
 }
 .blog_space{
+  position: relative;
+  left: -100px;
+  text-align: center;
+  animation: move 5s 2 forwards;
+  animation-delay: 3s;
 
 }
 .un_pic{
@@ -29,11 +41,16 @@ body{
 .product{
   border: solid black 2px;
     box-shadow: 3px 4px #ccccb3;
-    width: 30%;
+    width: 31%;
     display: inline-block;
+    background-color: #f5f5f0;
+}
+.product:hover{
+  transform: scale(1.2);
 }
 .product_grid{
-  padding-bottom: 50%;
+  padding-bottom: 30%;
+  padding-top: 20%;
 }
 ul{
   display: inline;
@@ -48,12 +65,31 @@ li{
 .fa-scroll{
   margin: 0;
   padding: 0;
-  color: blue;
+
 }
 nav{
-  background-color: grey;
+  background-color: rgba(115, 115, 115, 0.2);
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  background: rgba(115, 115, 115, 0.2);
+
+}
+#pinyon{
+    font-family: 'Pinyon Script', cursive;
+    font-weight: bold;
 }
 #motto{
+  text-align: center;
+  padding-top: 30%;
+  padding-bottom: 40%;
+}
+#motto.singe{
+  border: solid #d9d9d9 1px;
+  background-color: #e6f9ff;
   text-align: center;
   padding-top: 30%;
   padding-bottom: 40%;
@@ -63,20 +99,130 @@ nav{
   text-align: center;
   padding-bottom: 10%;
 }
+.faEllipsis_change{
+  cursor: pointer;
+}
+.faEllipsis_change:hover{
+  background-color: rgba(115, 115, 115, 0.2);
+}
 .aboutCo{
 text-align: left;
-margin-right: 50%;
+width: 60%;
 padding-top: 40%;
 padding-bottom: 40%;
+display: inline-block;
 
 }
 .aboutCo1{
   text-align: right;
-  margin-left: 50%;
+  width: 65%;
   padding-bottom: 40%;
+  display: inline-block;
 }
+#backImage{
+  background-image: url('./photos/paper.jfif');
+  background-size: cover;
+}
+#manager1{
+width: 80px;
+border: solid;
+border-radius: 100%;
+margin-top: 10%;
+margin-left: 5%
+
+
+
+}
+#manager2{
+  width: 80px;
+  height: 110px;
+  border: solid;
+  border-radius: 100%;
+  margin-top: 10%;
+  margin-left: 5%
+
+}
+#bought{
+   margin-left: 40%;
+   cursor: pointer;
+}
+#bought1{
+   margin-left: 40%;
+   cursor: pointer;
+}
+#bought2{
+   margin-left: 40%;
+   cursor: pointer;
+}
+
 
 
 footer{
   border-top: solid black 1px;
+  background-image: url('./photos/stack_paper.jfif')
+}
+/* KEYFRAMES */
+
+@keyframes move {
+
+  100%{left: 0;}
+
+}
+/* MEDIA */
+
+@media screen and (min-width: 1024px){
+  body{
+    font-size: 2em;
+  }
+  .product{
+    padding-right: 1%;
+  }
+  .product_grid{
+    padding-top: 12%;
+  }
+  .faEllipsis_change{
+    font-size: 1em;
+    border: solid;
+    border-radius: 40%;
+    width: 5%;
+  }
+  ul{
+    float: right;
+  }
+  #bought{
+    font-size: .8em;
+    border: solid;
+   border-radius: 10%;
+
+  }
+  #bought1{
+    font-size: .8em;
+    border: solid;
+    border-radius: 10%;
+  }
+  #bought2{
+    font-size: .8em;
+    border: solid;
+    border-radius: 10%;
+
+  }
+  .aboutCo{
+
+  }
+  #manager1{
+    width: 30% ;
+    margin-top: 20%;
+    border-radius: 50%;
+    height: 70vh;
+
+
+  }
+  .aboutCo1{
+    width: 60%;
+    display: inline-block;
+  }
+  #manager2{
+    width: 30%;
+    height: 50vh;
+  }
 }
